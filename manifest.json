@@ -1,0 +1,17 @@
+{
+  "id": "9c762b52-0183-4ab8-be07-562c18b2c81d",
+  "version": "1.0.0",
+  "platform": "all",
+  "arch": "all",
+  "name": "Markdown Viewer",
+  "logo": "/logo.png",
+  "keywords": ["markdown", "md"],
+  "devTools": false,
+  "preview": {
+    "md": {
+      "viewer": {
+        "path": "viewer/markdown.html"
+      }
+    }
+  }
+}

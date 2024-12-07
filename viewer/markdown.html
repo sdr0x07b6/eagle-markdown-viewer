@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Markdown Viewer</title>
+    <link
+      rel="stylesheet"
+      href="../node_modules/highlight.js/styles/github-dark.css"
+    />
+    <style>
+      body {
+        font-family: Helvetica, sans-serif;
+        margin: 0;
+        padding: 20px;
+        font-size: 1.2em;
+      }
+      pre code {
+        display: block;
+        padding: 1em;
+        overflow-x: auto;
+        background: var(--code-bg-color, #f0f0f0);
+        border: 1px solid var(--code-border-color, #ddd);
+      }
+      html[theme='light'] {
+        --text-color: #272c34;
+        --bg-color: #eee;
+        --code-bg-color: #f0f0f0;
+        --code-border-color: #ddd;
+      }
+      html[theme='dark'] {
+        --text-color: #eee;
+        --bg-color: #272c34;
+        --code-bg-color: #2d2d2d;
+        --code-border-color: #444;
+      }
+      html[theme='blue'] {
+        --text-color: #ffffff;
+        --bg-color: #0d1630;
+        --code-bg-color: #2d2d2d;
+        --code-border-color: #444;
+      }
+      html[theme='purple'] {
+        --text-color: #ffffff;
+        --bg-color: #1c1424;
+        --code-bg-color: #2d2d2d;
+        --code-border-color: #444;
+      }
+      html[theme='gray'] {
+        --text-color: #ffffff;
+        --bg-color: #37383c;
+        --code-bg-color: #2d2d2d;
+        --code-border-color: #444;
+      }
+      html[theme='lightgray'] {
+        --text-color: #272c34;
+        --bg-color: #e3e4e6;
+        --code-bg-color: #f0f0f0;
+        --code-border-color: #ddd;
+      }
+      body {
+        color: var(--text-color);
+        background-color: var(--bg-color);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content"></div>
+    <script src="../js/markdown-viewer.js"></script>
+  </body>
+</html>
